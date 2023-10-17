@@ -78,7 +78,7 @@ stages:
       - deployment: DeployFakeRestAPI
         pool:
           name: Default
-        environment: 'Test'
+        environment: 'UdacityAzureDevOps3Environment'
         strategy:
           runOnce:
             deploy:
