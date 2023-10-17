@@ -93,7 +93,7 @@ stages:
                     deploymentMethod: 'auto'
       - deployment: DeployVirtualMachine
         environment:
-          name:  'Test'
+          name:  'UdacityAzureDevOps3Environment'
           resourceType: VirtualMachine
         strategy:
           runOnce:
@@ -134,7 +134,7 @@ stages:
     jobs:
       - deployment: SeleniumTests
         environment:
-          name:  'Test'
+          name:  'UdacityAzureDevOps3Environment'
           resourceType: VirtualMachine
         strategy:
           runOnce:
